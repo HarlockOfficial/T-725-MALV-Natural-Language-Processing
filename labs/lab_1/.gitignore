@@ -1,3 +1,7 @@
+# The following are generated files, therefore is not necessary to track them
+tokens.txt
+unigram.txt
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm+all,jetbrains+all,venv,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm+all,jetbrains+all,venv,jupyternotebooks
 
