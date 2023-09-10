@@ -43,8 +43,8 @@ BEGIN {
         count += $1
     }
 } END {
-    print "With forumula P(Monday | said on) = count(said on Monday) / count(said on) = " count/sum
-    print "With forumula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + #Vocabulary)= " (count + 1)/(sum + vocabulary)
+    print "With formula P(Monday | said on) = count(said on Monday) / count(said on) = " count/sum
+    print "With formula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + #Vocabulary)= " (count + 1)/(sum + vocabulary)
 }' engTri.freq
-# With forumula P(Monday | said on) = count(said on Monday) / count(said on) = 0.0956938
-# With forumula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + 1 * #Vocabulary)= 0.000127109
+# With formula P(Monday | said on) = count(said on Monday) / count(said on) = 0.0956938
+# With formula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + 1 * #Vocabulary)= 0.000127109
