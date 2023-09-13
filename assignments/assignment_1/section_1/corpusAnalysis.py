@@ -12,8 +12,7 @@ nltk.download('gutenberg')
 def pretty_print(elements_to_pretty_print: dict[str, any]) -> str:
     out_string = ''
     for key, value in elements_to_pretty_print.items():
-        out_string += f'{key}: {value}'
-        out_string += '\n'
+        out_string += f'{key}: {value}\n'
     return out_string
 
 
