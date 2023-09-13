@@ -3,7 +3,7 @@
 # Part 1: Create eng.tok with 1 token per line using awk
 awk '{
     for (i=1; i<=NF; i+=2) {
-        if (i+1 <= NF && $i != "" && $(i+1) != "" && $i != "/" && (match($(i+1),/[A-Z]{2,4}/) || (match($i, /[^\w\s]/) && $i == $(i+1)))) {
+        if (i+1 <= NF && $i != "" && $(i+1) != "" && match($(i+1),/[A-Z]{2,4}|[^\w\s]/)) {
             printf "%s\n",$i
         }
     }
