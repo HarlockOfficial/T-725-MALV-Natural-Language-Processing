@@ -8,7 +8,6 @@ awk '{
         }
     }
 }' eng.sent > eng.tok
-# NOTE: in the previous command i explicitly filtered out "/", because it is used to specify the possibility for two tags on a specific token eg. yr NN / SYM
 
 
 # Part 2: Create engTri.freq with trigrams and their frequencies
