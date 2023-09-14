@@ -21,10 +21,10 @@ END{
 
 # Part 3: How many trigrams and distinct trigrams are there?
 echo "Amount of distinct trigrams: $(wc --lines engTri.freq | awk '{print $1}')"
-# Amount of distinct trigrams: 165004
+# Amount of distinct trigrams: 166451
 
 echo "Amount of trigrams: $(awk '{sum += $1} END {print sum}' engTri.freq)"
-# Amount of trigrams: 201563
+# Amount of trigrams: 204564
 
 
 # Part 4: Using engTri.freq, Estimate (using Maximum Likelihood Estimation) P(Monday | said on)
@@ -46,4 +46,4 @@ BEGIN {
     print "With formula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + #Vocabulary)= " (count + 1)/(sum + vocabulary)
 }' engTri.freq
 # With formula P(Monday | said on) = count(said on Monday) / count(said on) = 0.0956938
-# With formula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + 1 * #Vocabulary)= 0.000127109
+# With formula P(Monday | said on) = (count(said on Monday) + 1) / (count(said on) + 1 * #Vocabulary)= 0.000126005
