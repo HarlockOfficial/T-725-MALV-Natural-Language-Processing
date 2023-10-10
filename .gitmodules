@@ -1,0 +1,3 @@
+[submodule "assignments/assignment_2/section_3"]
+	path = assignments/assignment_2/section_3
+	url = https://github.com/karpathy/nanoGPT.git
